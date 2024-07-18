@@ -491,4 +491,5 @@ df4.write.format("jdbc") \
     .option("password", "password") \
     .save()
 
-
+with open("cdw-sapp_loan_application.json", "w") as outfile:
+    outfile.write(r.text)
